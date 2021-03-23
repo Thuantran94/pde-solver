@@ -1,0 +1,22 @@
+1D
+u_ex = x - 1
+f = alpha + beta * (x - 1)
+
+u_ex = x * (x - 1)
+f = alpha * (2 * x - 1) + beta * x * (x - 1) - 2;
+
+u_ex = x^3 + 4 * x;
+f = alpha * (3 * x^2 + 4) - 6 * x + beta * (x^3 + 4 * x);
+
+2D
+u_ex = x * (1 - x);
+f =  2 - beta * x * (x - 1) - alpha * (2 * x - 1)
+
+u_ex = x * x + y * y;
+f =  2*alpha*x + 2*alpha*y + beta*(x*x + y*y) - 4
+
+u_ex = x * (1 - x) * y * (1 - y);
+f = alpha * (x * y * (x - 1) + x * (x - 1) * (y - 1)) - 2 * y * (y - 1) - 2 * x *     (x - 1) + alpha * (x * y * (y - 1) + y * (x - 1) * (y - 1)) + beta * x * y *      (x - 1) * (y - 1);
+
+u = x*(x + t)
+f = x - 2*kappa + beta*x*(x + t) + alpha*(t + 2*x)
